@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewMessageActivity">
+
+    <Toolbar
+        android:id="@+id/newpost_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/toolbar_background">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/text_padding">
+
+            <TextView
+                android:id="@+id/cancelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Cancel"
+                android:textColor="@color/accent"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Write"
+                android:textColor="@color/accent"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/postText"
+                app:layout_constraintStart_toEndOf="@+id/cancelText"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/postText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Post"
+                android:textColor="@color/accent"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/userInformText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newpost_toolbar"
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/text_padding">
+
+        <ImageView
+            android:id="@+id/profileImageItem"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/authorNameItem"
+            style="@style/AppTheme.Subheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/profileImageItem"
+            android:layout_marginLeft="@dimen/text_padding"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toLeftOf="@+id/nationflagImageItem"
+            android:layout_toRightOf="@+id/profileImageItem"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Anna"
+            android:textColor="@color/colorToolbar" />
+
+        <ImageView
+            android:id="@+id/restaurantItemCategory"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/authorNameItem"
+            android:layout_alignLeft="@+id/authorNameItem"
+
+            android:src="@drawable/ic_map_n"
+            android:textColor="@color/black"
+            tools:text="Italian" />
+
+        <TextView
+            android:id="@+id/cityNameItem"
+            style="@style/AppTheme.TextDivider"
+            android:layout_alignTop="@+id/restaurantItemCategory"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="-4dp"
+            android:layout_toRightOf="@+id/restaurantItemCategory"
+            android:text="New York," />
+
+        <TextView
+            android:id="@+id/nationNameItem"
+            style="@style/AppTheme.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/restaurantItemCategory"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="-4dp"
+            android:layout_toRightOf="@+id/cityNameItem"
+            android:text="United States"
+            android:textColor="@android:color/darker_gray" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/messageTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userInformText">
+
+        <EditText
+            android:id="@+id/messageText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:hint="Anna! tell us your story today"
+            android:inputType="textMultiLine"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textCursorDrawable="@drawable/black_cursor" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/uploadImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/messageTextLayout"
+        android:layout_marginTop="@dimen/fab_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/loadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/toolbar_background"
+            android:gravity="center"
+            android:text="Load Image"
+            android:textColor="@color/accent"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

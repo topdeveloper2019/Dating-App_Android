@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_one"
+        android:enabled="true"
+        android:icon="@drawable/selector_navi_new_story"
+        android:title="@string/story"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_two"
+        android:enabled="true"
+        android:icon="@drawable/selector_navi_search"
+        android:title="Search"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_three"
+        android:enabled="true"
+        android:icon="@drawable/selector_navi_friendstory"
+        android:title="Message"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_four"
+        android:enabled="true"
+        android:icon="@drawable/selector_navi_profile"
+        android:title="@string/profile_b"
+        app:showAsAction="ifRoom" />
+</menu>

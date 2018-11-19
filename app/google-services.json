@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "58164822610",
+    "firebase_url": "https://vetroapp.firebaseio.com",
+    "project_id": "vetroapp",
+    "storage_bucket": "vetroapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58164822610:android:51a44e376e4918c8",
+        "android_client_info": {
+          "package_name": "com.example.drago.vetroapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58164822610-ua16ns4520h7gmrihrr1c56j6cvbdgu2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.drago.vetroapp",
+            "certificate_hash": "a81ff79c4e37b0d59d63f6fc6462a0e699c99e79"
+          }
+        },
+        {
+          "client_id": "58164822610-lfs0miur2163bovskhg5hdrm9fi75tga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMiHr54Hl0rRqWqIKClIKWy6341YtYvCg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58164822610-lfs0miur2163bovskhg5hdrm9fi75tga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

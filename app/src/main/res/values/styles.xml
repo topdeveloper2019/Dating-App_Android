@@ -1,0 +1,179 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <item name="android:windowBackground">@drawable/toolbar_background</item>
+
+        <item name="colorControlNormal">@color/iron</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/iron</item>
+        <item name="dialogSheetAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/primary_darker</item>
+        <item name="android:colorButtonNormal">@color/primary_darker</item>
+    </style>
+    <style name="AppTheme.DarkPost" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/black</item>
+        <!--<item name="colorControlNormal">@color/iron</item>-->
+        <!--<item name="colorControlActivated">@color/white</item>-->
+        <!--<item name="colorControlHighlight">@color/white</item>-->
+        <!--<item name="android:textColorHint">@color/iron</item>-->
+        <item name="dialogSheetAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/primary_darker</item>
+        <item name="android:colorButtonNormal">@color/primary_darker</item>
+    </style>
+    <style name="AppTheme.MainStory" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/iron</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--<style name="CountryPickerStyle">-->
+    <!--<item name="android:textColor">@android:color/white</item>-->
+    <!--<item name="android:textColorHint">@android:color/white</item>-->
+    <!--<item name="android:background">#424242</item>-->
+    <!--<item name="android:drawable">@drawable/ic_dummy_icon</item>-->
+    <!--</style>-->
+    <style name="AppTheme.Overflow" parent="Base.Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:padding">0dp</item>
+        <item name="android:tint">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.FormLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="AppTheme.Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:background">#BDBDBD</item>
+    </style>
+
+    <style name="AppTheme.FilterIcon">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+
+    <style name="AppTheme.FilterSpinner" parent="Base.Widget.AppCompat.Spinner.Underlined">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <style name="ThemeOverlay.FilterButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.Headline">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="AppTheme.Title">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AppTheme.Subheader">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppTheme.Body1">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppTheme.Body2">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppTheme.Caption">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.TextDivider">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="AppTheme.PizzaGuy">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">150dp</item>
+    </style>
+
+    <style name="Cropper.Widget.Drawer.Seperator" parent="android:Widget.DeviceDefault.Light.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginBottom">@dimen/drawer_text_padding</item>
+        <item name="android:layout_marginTop">@dimen/drawer_text_padding</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="Cropper.Widget.Drawer.Title.TextView" parent="android:Widget.DeviceDefault.Light.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/drawer_text_padding</item>
+        <item name="android:textSize">@dimen/drawer_text_size</item>
+        <item name="android:clickable">false</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Cropper.Widget.Drawer.Option.TextView" parent="android:Widget.DeviceDefault.Light.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/drawer_text_padding</item>
+        <item name="android:textSize">@dimen/drawer_text_size</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+
+    </style>
+    <style name="counterText">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="counterOverride">
+        <item name="android:textColor">#ee4f4f</item>
+    </style>
+</resources>

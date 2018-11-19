@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/profileImageItem"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/authorNameItem"
+            style="@style/AppTheme.Subheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/profileImageItem"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toLeftOf="@+id/nationflagImageItem"
+            android:layout_toRightOf="@+id/profileImageItem"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="Stella" />
+
+        <ImageView
+            android:id="@+id/restaurantItemCategory"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/authorNameItem"
+            android:layout_alignLeft="@+id/authorNameItem"
+
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_map_n"
+            android:textColor="@color/black"
+            tools:text="Italian" />
+
+        <TextView
+            android:id="@+id/cityNameItem"
+            style="@style/AppTheme.TextDivider"
+            android:layout_alignTop="@+id/restaurantItemCategory"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="-4dp"
+            android:layout_toRightOf="@+id/restaurantItemCategory"
+            android:text="New York," />
+
+        <TextView
+            android:id="@+id/nationNameItem"
+            style="@style/AppTheme.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/restaurantItemCategory"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="-4dp"
+            android:layout_toRightOf="@+id/cityNameItem"
+            android:text="United States"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/timeTextItem"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nationflagImageItem"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="-4dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@+id/nationNameItem"
+            android:gravity="right"
+            android:text="AM 7:44"
+            android:textColor="@color/base" />
+
+        <ImageView
+            android:id="@+id/nationflagImageItem"
+            style="@style/AppTheme.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cityNameItem"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="9dp"
+            android:src="@drawable/c1" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/sharedImageItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/messageTextItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/text_padding"
+        android:text="I've probabley already met the man of my dreams and tolds him to fuck off lol"
+        android:textColor="@color/colorToolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_story_heart_n" />
+
+        <TextView
+            android:id="@+id/countlikesItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="5"
+            android:text="0 likes" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:src="@drawable/ic_story_comment_n" />
+
+        <TextView
+            android:id="@+id/countcommentItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="5"
+            android:text="0 comments" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_rn_translate_n" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_friend_more_n" />
+    </LinearLayout>
+
+</LinearLayout>

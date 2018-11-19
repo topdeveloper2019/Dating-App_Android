@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.TestFragment">
+
+    <Toolbar
+        android:id="@+id/story_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_background"
+        android:logo="@drawable/selector_ic_friend_chat">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Doongle Story"
+            android:textColor="@color/accent"
+            android:textSize="18sp" />
+    </Toolbar>
+
+    <LinearLayout
+        android:id="@+id/my_story"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/story_toolbar"
+        android:layout_marginLeft="@dimen/text_padding"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/myprofileImage"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/newpostText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/text_padding"
+            android:layout_weight="5"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:longClickable="false"
+            android:text="Li Ryong! tell us your  @string/story"
+            android:textColor="@color/iron"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/filterImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_filter" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/my_story"
+        android:background="@color/aluminum" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messagesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider3"
+        android:elevation="9dp"
+        android:padding="5dp"
+        android:scrollbars="none" />
+
+</RelativeLayout>
